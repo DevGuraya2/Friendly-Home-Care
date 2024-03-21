@@ -1,0 +1,24 @@
+body {
+  background: #ccc;
+  font-size: 1.1rem;
+}
+#logo {
+  height: 6rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  margin-left: 0.5rem;
+}
+#hero {
+  background-image: url("../images/2148940028.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hero-content {
+  height: 460px;
+}
+.title {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: bold;
+}
