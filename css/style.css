@@ -1,5 +1,8 @@
 body {
   background: #ccc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.1rem;
 }
 #logo {
@@ -18,7 +21,7 @@ body {
   height: 460px;
 }
 .title {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 4rem;
+  line-height: 4rem;
   font-weight: bold;
 }
