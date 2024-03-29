@@ -24,11 +24,27 @@ body {
 a {
   color: #007172;
 }
+.no-underline {
+  text-decoration: none;
+}
 a.no-underline:hover {
   text-decoration: underline;
 }
+.ff-slab {
+  font-family: "Roboto Slab", sans-serif;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.br-default {
+  border-radius: 1.4rem;
+}
 .bg-light {
-  background-color: rgba(244, 226, 222, 0.8) !important;
+  background-color: rgba(244, 226, 222, 0.5) !important;
+  /* background-color: rgba(0, 113, 114, 0.2) !important; */
+}
+.bg-grey {
+  background-color: rgba(244, 226, 222, 0.1) !important;
 }
 .btn {
   padding: 0.5rem 1rem;
@@ -51,8 +67,29 @@ a.no-underline:hover {
   background-color: #f29325;
   border-color: #f29325;
 }
-.no-underline {
+a.card-link {
   text-decoration: none;
+  background: #fff;
+  display: block;
+  border-radius: 2rem;
+  padding: 1.6rem;
+  border: 1px solid rgba(0, 113, 114, 0.2);
+  transition: all 0.2s linear;
+  margin-bottom: 2rem;
+}
+a.card-link:hover {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+a.card-link img {
+  height: 240px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+a.card-link h3 {
+  font-weight: bold;
+}
+a.card-link p {
+  color: #444;
 }
 .logo {
   height: 6rem;
@@ -61,8 +98,8 @@ a.no-underline:hover {
   margin-left: 1rem;
 }
 #hero {
-  background-image: url("../images/elder-care-bg.jpg");
-  background-position: top center;
+  background-image: url("../images/elder-care-bg6.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1.4rem;
@@ -71,6 +108,7 @@ a.no-underline:hover {
   height: 540px;
 }
 .hero-title {
+  font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 3.2rem;
