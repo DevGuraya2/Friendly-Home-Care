@@ -37,14 +37,25 @@ a.no-underline:hover {
   text-transform: uppercase;
 }
 .br-default {
-  border-radius: 1.4rem;
+  border-top-left-radius: 1.8rem;
+  border-top-right-radius: 1.8rem;
+  border-bottom-right-radius: 1.8rem;
 }
 .bg-light {
-  background-color: rgba(244, 226, 222, 0.5) !important;
-  /* background-color: rgba(0, 113, 114, 0.2) !important; */
+  background-color: rgba(244, 226, 222, 0.8) !important;
+}
+.bg-light2 {
+  background-color: rgba(0, 113, 114, 0.2) !important;
 }
 .bg-grey {
   background-color: rgba(244, 226, 222, 0.1) !important;
+}
+.py-6 {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+.mb-6 {
+  margin-bottom: 4.5rem;
 }
 .btn {
   padding: 0.5rem 1rem;
@@ -67,28 +78,46 @@ a.no-underline:hover {
   background-color: #f29325;
   border-color: #f29325;
 }
-a.card-link {
+.text-primary {
+  color: #025259 !important;
+}
+.text-secondary {
+  color: #d94f04 !important;
+}
+.img-p-cover {
+  aspect-ratio: 1/1;
+  max-height: 400px;
+  object-fit: cover;
+}
+.card-link {
   text-decoration: none;
   background: #fff;
   display: block;
-  border-radius: 2rem;
-  padding: 1.6rem;
-  border: 1px solid rgba(0, 113, 114, 0.2);
+  /* border-radius: 2rem;
+  padding: 1.6rem; */
+  padding-left: 1.6rem;
+  /* border: 1px solid rgba(0, 113, 114, 0.2); */
+  border-left: 1px solid rgba(242, 147, 37, 1) !important;
   transition: all 0.2s linear;
   margin-bottom: 2rem;
 }
-a.card-link:hover {
+/* a.card-link:hover {
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
-}
-a.card-link img {
+} */
+.card-link img {
   height: 240px;
   aspect-ratio: 16/9;
   object-fit: cover;
+  border-radius: 1.8rem;
+  transition: all 0.2s linear;
 }
-a.card-link h3 {
+.card-link:hover img {
+  border-bottom-left-radius: 0;
+}
+.card-link h3 {
   font-weight: bold;
 }
-a.card-link p {
+.card-link p {
   color: #444;
 }
 .logo {
@@ -102,10 +131,13 @@ a.card-link p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 1.4rem;
+  /* border-radius: 1.4rem; */
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
 }
 #hero-content {
-  height: 540px;
+  height: 580px;
 }
 .hero-title {
   font-family: "Roboto Slab", sans-serif;
