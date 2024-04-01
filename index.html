@@ -99,13 +99,22 @@
         <div class="row">
           <div class="col-12 col-lg-6 py-3">
             <i class="fas fa-phone me-1"></i> Call Us For A Free Consultation!
-            <strong>773-545-7776</strong>
+            <strong
+              ><a href="tel:+17735457776" class="no-underline"
+                >773-545-7776</a
+              ></strong
+            >
           </div>
           <div class="col-12 col-lg-6 py-3 text-end">
             <i class="fas fa-location-dot me-1"></i>
-            <a href="#" class="no-underline">
-              427 N Milwaukee Ave Chicago, IL 60641</a
+            <a
+              href="https://maps.app.goo.gl/9xGfdNnyDkvKwJVG6"
+              title="View On Map"
+              class="no-underline"
+              target="_blank"
             >
+              427 N Milwaukee Ave Chicago, IL 60641
+            </a>
           </div>
         </div>
       </div>
@@ -139,7 +148,7 @@
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse py-2" id="navbarNav">
                   <ul class="navbar-nav me-0 ms-auto">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="/"
@@ -176,19 +185,38 @@
                         </li>
                       </ul>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Service Areas</a>
+                    <li class="nav-item dropdown d-none d-lg-block d-xl-none">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        More
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">Blog</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Testimonials</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">FAQs</a>
+                        </li>
+                      </ul>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">FAQs</a>
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-lg-none d-xl-block">
                       <a class="nav-link" href="#">Blog</a>
                     </li>
-                    <li class="nav-item ms-3">
+                    <li class="nav-item d-lg-none d-xl-block">
+                      <a class="nav-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item d-lg-none d-xl-block">
+                      <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item ms-0 ms-lg-4 mt-2 mt-lg-0">
                       <a class="btn btn-primary" href="#">Contact</a>
                     </li>
                   </ul>
@@ -203,7 +231,7 @@
           <div class="col-12 col-lg-6">
             <div
               id="hero-content"
-              class="d-flex flex-column justify-content-center ps-5"
+              class="d-flex flex-column justify-content-center px-4 ps-lg-5 pe-lg-0"
             >
               <div class="hero-title">
                 Your Trusted Home Services Placement Agency
@@ -239,7 +267,14 @@
               title="Learn more about In-Home Care Services"
               href="#"
             >
-              <img src="./images/105.jpg" class="w-100 mb-4" alt="" />
+              <div class="position-relative">
+                <img src="./images/105.jpg" class="w-100 mb-4" alt="" />
+                <div
+                  class="position-absolute top-50 start-50 translate-middle hover-show"
+                >
+                  <i class="fas fa-eye fa-3x text-white"></i>
+                </div>
+              </div>
               <h3 class="h4 mb-3">In-Home Care Services</h3>
               <p class="mb-0">
                 Our in-home care services offer compassionate support for those
@@ -252,11 +287,18 @@
           <div class="col-12 col-lg-4">
             <a
               class="card-link"
-              title="Learn more about Companionship Caregivers"
+              title="Learn more about Companionship Care"
               href="#"
             >
-              <img src="./images/106812.jpg" class="w-100 mb-4" alt="" />
-              <h3 class="h4 mb-3">Companionship Caregivers</h3>
+              <div class="position-relative">
+                <img src="./images/2147788024.jpg" class="w-100 mb-4" alt="" />
+                <div
+                  class="position-absolute top-50 start-50 translate-middle hover-show"
+                >
+                  <i class="fas fa-eye fa-3x text-white"></i>
+                </div>
+              </div>
+              <h3 class="h4 mb-3">Companionship Care</h3>
               <p class="mb-0">
                 Our companionship caregivers provide meaningful emotional
                 support and companionship. Through engaging conversation, games,
@@ -271,7 +313,14 @@
               title="Learn more about Personal Care"
               href="#"
             >
-              <img src="./images/2147788024.jpg" class="w-100 mb-4" alt="" />
+              <div class="position-relative">
+                <img src="./images/106812.jpg" class="w-100 mb-4" alt="" />
+                <div
+                  class="position-absolute top-50 start-50 translate-middle hover-show"
+                >
+                  <i class="fas fa-eye fa-3x text-white"></i>
+                </div>
+              </div>
               <h3 class="h4 mb-3">Personal Care</h3>
               <p class="mb-0">
                 Our personal care services ensure comfort, safety, and dignity
@@ -281,6 +330,9 @@
                 home.
               </p>
             </a>
+          </div>
+          <div class="col-12 text-center pt-4">
+            <a href="#" class="btn btn-secondary">View All Services</a>
           </div>
         </section>
       </div>
@@ -293,70 +345,155 @@
               Why Choose Friendly Home Care?
             </h2>
             <p>
-              Since 1990, Friendly Home Care has been a cornerstone of
-              dependable, compassionate service. With a rigorous screening
-              process, including background checks, our caregivers are trusted
-              companions dedicated to your well-being. We offer flexible
-              scheduling to suit your needs and preferences.
-              <strong
-                >We speak multiple languages, including English, Polish,
-                Ukrainian, Russian, Italian, and Hebrew.</strong
-              >
+              For over 30 years, Friendly Home Care has provided reliable and
+              caring service. Our caregivers are carefully chosen and undergo
+              background checks to make sure they're trustworthy and dedicated
+              to your happiness. We offer flexible scheduling to fit your needs
+              and speak many languages, including
+              <strong>English</strong>, <strong>Polish</strong>,
+              <strong>Ukrainian</strong>, <strong>Russian</strong>,
+              <strong>Italian</strong>, and <strong>Hebrew</strong>.
             </p>
           </div>
         </section>
-        <section class="row align-items-center mb-6">
+        <section class="row align-items-center mb-5">
           <div class="col-12 col-lg-6">
-            <div class="pe-lg-5">
-              <img
-                src="./images/105.jpg"
-                class="w-100 br-default mb-4 mb-lg-3 img-p-cover"
-                alt=""
-              />
-            </div>
+            <img
+              src="./images/105.jpg"
+              class="w-100 br-default mb-4 mb-lg-3 img-p-cover"
+              alt=""
+            />
           </div>
           <div class="col-12 col-lg-6">
-            <h2 class="mb-3 ff-slab text-secondary">
-              Trusted In-Home Care Services for Families in Chicago, IL, and
-              Surrounding Suburbs
-            </h2>
-            <p>
-              In the heart of Chicago and its surrounding suburbs, many families
-              trust our comprehensive in-home care services. Alongside
-              companionship, we offer personalized care tailored to individual
-              needs. Our caregivers provide emotional support, ensuring clients
-              never feel alone or isolated. Our European-trained staff delivers
-              compassionate care, fostering comfort and well-being in every
-              interaction.
-            </p>
+            <div class="ps-0 ps-lg-5">
+              <h2 class="mb-3 ff-slab">
+                Trusted In-Home Care Services for Families in Chicago, IL, and
+                Surrounding Suburbs
+              </h2>
+              <p>
+                In the heart of Chicago and its surrounding suburbs, many
+                families trust our comprehensive in-home care services.
+                Alongside companionship, we offer personalized care tailored to
+                individual needs. Our caregivers provide emotional support,
+                ensuring clients never feel alone or isolated. Our
+                European-trained staff delivers compassionate care, fostering
+                comfort and well-being in every interaction.
+              </p>
+            </div>
           </div>
         </section>
-        <section class="row align-items-center mb-6">
+        <section class="row align-items-center">
           <div class="col-12 col-lg-6">
-            <div class="pe-lg-5">
-              <img
-                src="./images/106812.jpg"
-                class="w-100 br-default mb-4 mb-lg-3 img-p-cover"
-                alt=""
-              />
-            </div>
+            <img
+              src="./images/106812.jpg"
+              class="w-100 br-default mb-4 mb-lg-3 img-p-cover"
+              alt=""
+            />
           </div>
           <div class="col-12 col-lg-6 order-lg-first">
-            <h2 class="mb-3 ff-slab text-secondary">
-              Comprehensive Home Care Services Tailored to You
+            <div class="pe-0 pe-lg-5">
+              <h2 class="mb-3 ff-slab">
+                Comprehensive Home Care Services Tailored to You
+              </h2>
+              <p>
+                Whether it's assistance with daily activities or specialized
+                care, our dedicated team is here to support you or your loved
+                one in the comfort of home. Don't let illness or age hinder
+                daily life. Friendly Home Care empowers independence and joy,
+                offering temporary, hourly, and live-in care options. Our
+                certified caregivers excel in aiding with conditions like
+                Dementia, Parkinson's, M.S., Stroke, Cancer, and more. Available
+                24/7, even on holidays.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div class="text-center pt-5">
+          <a href="#" class="btn btn-secondary">More About Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-blue text-light">
+      <div class="container py-6">
+        <section class="row">
+          <div class="col-12 col-lg-8 offset-lg-2 text-center">
+            <h2 class="h1 fw-bold mb-5 ff-slab uppercase text-white">
+              Book Your Free Consultation Today
             </h2>
             <p>
-              Whether it's assistance with daily activities or specialized care,
-              our dedicated team is here to support you or your loved one in the
-              comfort of home. Don't let illness or age hinder daily life.
-              Friendly Home Care empowers independence and joy, offering
-              temporary, hourly, and live-in care options. Our certified
-              caregivers excel in aiding with conditions like Dementia,
-              Parkinson's, M.S., Stroke, Cancer, and more. Available 24/7, even
-              on holidays.
+              Discover peace of mind with our personalized care plans. Schedule
+              a free consultation with one of our care coordinators today.
+              Together, we'll design a care plan that meets your requirements
+              and budget. Contact us at 773-545-7776 to begin your journey
+              towards quality care.
+            </p>
+            <p>
+              We Proudly Serve Clients Throughout <u>Chicago</u> and the
+              Chicagoland Suburbs Including <u>Cook County</u>,
+              <u>DuPage County</u>, <u>Lake County</u>, <u>McHenry County</u>,
+              <u>Will County</u>, and <u>Kankakee County</u>.
+            </p>
+            <p class="pt-5">
+              <a href="tel:7735457776" class="btn btn-light">
+                <i class="fas fa-phone me-1"></i> 773-545-7776
+              </a>
             </p>
           </div>
         </section>
+      </div>
+    </div>
+    <div class="container-fluid bg-blue2 text-light">
+      <div class="container py-6">
+        <footer class="row">
+          <div class="col-12 col-lg-4">
+            <ul class="text-light text-center text-lg-start">
+              <li class="mb-2 mb-lg-1"><a href="">Home</a></li>
+              <li class="mb-2 mb-lg-1"><a href="">About Us</a></li>
+              <li class="mb-2 mb-lg-1"><a href="">Our Services</a></li>
+              <li class="mb-2 mb-lg-1"><a href="">FAQs</a></li>
+              <li class="mb-2 mb-lg-1"><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="d-flex flex-column justify-content-between">
+              <ul class="text-light text-center text-lg-start mb-4">
+                <li class="mb-2 mb-lg-1"><a href="">Blog</a></li>
+                <li class="mb-2 mb-lg-1"><a href="">Testimonials</a></li>
+                <li class="mb-2 mb-lg-1"><a href="">Terms Of Use</a></li>
+                <li class="mb-2 mb-lg-1"><a href="">Privacy Policy</a></li>
+              </ul>
+              <div
+                class="d-flex justify-content-center justify-content-lg-start mb-5 mb-lg-0"
+              >
+                <a
+                  class="mx-4 ms-lg-0 me-lg-4"
+                  href="https://facebook.com/people/Friendly-Home-Care/61550585432696/"
+                  target="_blank"
+                >
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a
+                  class="mx-4 ms-lg-0 me-lg-4"
+                  href="mailto:friendly@chicagoeuropeancaregivers.com"
+                  target="_blank"
+                >
+                  <i class="fas fa-envelope fa-2x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 text-center text-lg-start">
+            <p class="mb-4">
+              <strong>Friendly Home Care is licensed by IDPH and IDL</strong>
+              and is a member of important groups like the
+              <em>Illinois Continuity of Care Association</em> and the
+              <em>Virtual Senior Academy</em>.
+            </p>
+            <p class="m-0">
+              &copy; Copyright 2024 ChicagoEuropeanCaregivers.com
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
     <link
