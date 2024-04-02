@@ -58,6 +58,10 @@ a.no-underline:hover {
 .bg-blue2 {
   background-color: #025259;
 }
+.bg-blue a,
+.bg-blue2 a {
+  color: #ddd;
+}
 .py-6 {
   padding-top: 4.5rem;
   padding-bottom: 4.5rem;
@@ -140,7 +144,7 @@ a.no-underline:hover {
   opacity: 1;
 }
 .logo {
-  height: 6rem;
+  height: 5.2rem;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
   margin-left: 0;
@@ -152,7 +156,7 @@ a.no-underline:hover {
   border-bottom-right-radius: 3rem;
 }
 #hero-content {
-  height: 560px;
+  min-height: 560px;
 }
 .hero-title {
   font-family: "Roboto Slab", sans-serif;
@@ -192,6 +196,9 @@ footer a:hover {
 }
 
 @media screen and (min-width: 992px) {
+  .logo {
+    height: 6rem;
+  }
   #hero {
     background-image: url("../images/friendly-home-care-hero.jpg");
     background-position: center;
