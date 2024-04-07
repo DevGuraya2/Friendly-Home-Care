@@ -22,6 +22,11 @@ body {
   color: #444;
   background-color: #f0f0f0;
 }
+h1,
+.h1 {
+  font-size: 2rem;
+  line-height: 1;
+}
 a {
   color: #007172;
 }
@@ -200,6 +205,11 @@ footer a:hover {
 }
 
 @media screen and (min-width: 992px) {
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
   .logo {
     height: 6rem;
   }
